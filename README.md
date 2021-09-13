@@ -1,19 +1,12 @@
 # webneex/consulta-cfdisat
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/webneex/consulta-cfdisat?style=flat-square)](https://packagist.org/packages/webneex/consulta-cfdisat)
-[![Total Downloads](https://img.shields.io/packagist/dt/webneex/consulta-cfdisat?style=flat-square)](https://packagist.org/packages/webneex/consulta-cfdisat)
+[![Latest Stable Version](https://img.shields.io/packagist/v/webneex/descarga-masiva-sat?style=flat-square)](https://packagist.org/packages/webneex/descarga-masiva-sat)
+[![Total Downloads](https://img.shields.io/packagist/dt/webneex/descarga-masiva-sat?style=flat-square)](https://packagist.org/packages/webneex/descarga-masiva-sat)
 
 ## Installation
 
 Run
 
 ```sh
-$ composer require webneex/consulta-cfdisat
+$ composer require webneex/descarga-masiva-sat
 ```
-
-## Usage
-
-```php
-\Webneex\ConsultaCFDISAT\ConsultaCFDISAT::ConsultaCfdiPruebas('AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA', 'AAA010101AAA', 'XAXX010101000', 1.23);
-```
-
