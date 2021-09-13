@@ -1,0 +1,25 @@
+{
+  "name": "webneex/descarga-masiva-sat",
+  "description": "Librer\u0000a para descarga masiva de comprobantes",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Francisco Carribero",
+      "email": "francisco.carriberoQ@webneex.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "nesbot/carbon": "^2.53",
+    "ext-openssl": "*",
+    "ext-gmp": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
+}
