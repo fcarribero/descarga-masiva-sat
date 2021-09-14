@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8bb2fbb0c131b3511f32755db5efcd4",
+    "content-hash": "90dc2e3fa711dc9a293c488050604854",
     "packages": [
         {
             "name": "nesbot/carbon",
@@ -483,6 +483,49 @@
                 }
             ],
             "time": "2021-03-23T23:28:01+00:00"
+        },
+        {
+            "name": "webneex/sello-cfdi",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fcarribero/sello-cfdi.git",
+                "reference": "aed676e55c57ba0414c1ed8d1797af67a46d230b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fcarribero/sello-cfdi/zipball/aed676e55c57ba0414c1ed8d1797af67a46d230b",
+                "reference": "aed676e55c57ba0414c1ed8d1797af67a46d230b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-gmp": "*",
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "nesbot/carbon": "^2.53",
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Francisco Carribero",
+                    "email": "francisco.carribero@webneex.com"
+                }
+            ],
+            "description": "Clase para operar con sello CFDI",
+            "support": {
+                "issues": "https://github.com/fcarribero/sello-cfdi/issues",
+                "source": "https://github.com/fcarribero/sello-cfdi/tree/v1.0.0"
+            },
+            "time": "2021-09-14T00:46:59+00:00"
         }
     ],
     "packages-dev": [],
@@ -494,8 +537,11 @@
     "platform": {
         "php": ">=5.6",
         "ext-curl": "*",
-        "ext-dom": "*"
+        "ext-dom": "*",
+        "ext-openssl": "*",
+        "ext-gmp": "*",
+        "ext-json": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.1.0"
 }

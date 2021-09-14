@@ -9,6 +9,7 @@ use Exception;
 use Webneex\DescargaMasivaSAT\Objects\Paquete;
 use Webneex\DescargaMasivaSAT\Objects\SolicitaDescargaResult;
 use Webneex\DescargaMasivaSAT\Objects\VerificaSolicitudDescargaResult;
+use Webneex\SelloCFDI\Sello;
 
 class DescargaMasivaSAT {
 
@@ -28,7 +29,7 @@ class DescargaMasivaSAT {
     }
 
     /**
-     * @param Sello $sello
+     * @param Sello $sello.
      */
     public function SetSello($sello) {
         $this->sello = $sello;
