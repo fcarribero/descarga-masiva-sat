@@ -115,7 +115,8 @@ class DescargaMasivaSAT {
         /** @var DOMElement $solicitud */
         $solicitud = $xmldoc->getElementsByTagName('solicitud')->item(0);
         if ($rfc_emisor) $solicitud->setAttribute('RfcEmisor', $rfc_emisor);
-        if ($rfc_receptor) $solicitud->setAttribute('RfcReceptor', $rfc_receptor);
+        $solicitud->appendChild($RfcReceptores = $xmldoc->createElementNS('http://DescargaMasivaTerceros.sat.gob.mx', 'RfcReceptores'));
+        $RfcReceptores->appendChild($xmldoc->createElementNS('http://DescargaMasivaTerceros.sat.gob.mx', 'RfcReceptor', $rfc_receptor));
         $solicitud->setAttribute('RfcSolicitante', $this->sello->getPublicKeyRFC());
         $solicitud->setAttribute('FechaInicial', $fecha_inicial->format('Y-m-d\TH:i:s'));
         $solicitud->setAttribute('FechaFinal', $fecha_final->format('Y-m-d\TH:i:s'));
